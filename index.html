@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Malik - CRVS Regional Focal Person</title>
+    <meta name="description" content="Portfolio of Abdul Malik, CRVS Regional Focal Person and NADRA Veteran. Expert in Civil Registration, Vital Statistics, and Digital Transformation in Government.">
+    <meta name="keywords" content="Abdul Malik, NADRA, CRVS, Multan, Vital Statistics, Government Tech, Digital Transformation">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0B1120; /* Darker, richer Navy */
+            --secondary: #C5A059; /* Muted, elegant Gold */
+            --secondary-light: #F3E5C2;
+            --accent: #2563EB; /* Royal Blue */
+            --dark: #020617;
+            --light: #F8FAFC;
+            --white: #FFFFFF;
+            --text: #334155;
+            --text-light: #64748B;
+            --glass: rgba(255, 255, 255, 0.95);
+            --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif; /* Modern, clean body font */
+            color: var(--text);
+            line-height: 1.7;
+            background-color: var(--light);
+            font-size: 16px;
+        }
+
+        h1, h2, h3, h4, h5, h6, .logo {
+            font-family: 'Playfair Display', serif; /* Authoritative serif for headings */
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding: 1.2rem 0;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2.8rem; /* Increased from 1.8rem */
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 3rem;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text);
+            font-size: 1rem;
+            font-family: 'Outfit', sans-serif;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--secondary);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 0 6rem;
+            background: radial-gradient(circle at 10% 20%, #f8fafc 0%, transparent 20%),
+                        radial-gradient(circle at 90% 80%, #f1f5f9 0%, transparent 20%);
+            overflow: hidden;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            gap: 5rem;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 4.5rem;
+            color: var(--primary);
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .hero-text h2 {
+            font-size: 1.5rem;
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+            font-weight: 400;
+            font-family: 'Outfit', sans-serif;
+            max-width: 90%;
+        }
+
+        .badges {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .badge {
+            background: white;
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid #e2e8f0;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .badge.gold {
+            background: var(--secondary-light);
+            color: #855a00;
+            border: 1px solid var(--secondary);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .btn {
+            padding: 16px 32px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .profile-placeholder {
+            width: 420px;
+            height: 480px;
+            background: #f1f5f9;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            color: #cbd5e1;
+            box-shadow: var(--shadow);
+            transform: rotate(2deg);
+            border: 10px solid white;
+        }
+
+        /* Stats */
+        .stats {
+            background: var(--primary);
+            padding: 5rem 0;
+            margin-bottom: 6rem;
+            border-radius: 0 0 50px 50px; /* Modern curve */
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .stat-item::after {
+            content: '';
+            position: absolute;
+            right: -1.5rem;
+            top: 20%;
+            height: 60%;
+            width: 1px;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .stat-item:last-child::after {
+            display: none;
+        }
+
+        .stat-item h3 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+            font-family: 'Outfit', sans-serif; /* Numbers looking clean */
+        }
+
+        .stat-item p {
+            color: #94a3b8;
+            font-weight: 500;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Sections */
+        .section {
+            padding: 7rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 5rem;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--secondary);
+            margin: 10px auto 0;
+        }
+
+        .section-subtitle {
+            color: var(--text-light);
+            font-size: 1.2rem;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: #e2e8f0;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+
+        .timeline-item {
+            padding: 20px 60px;
+            position: relative;
+            width: 50%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--white);
+            border: 5px solid var(--secondary);
+            border-radius: 50%;
+            top: 30px;
+            z-index: 10;
+            right: -11px;
+            transition: all 0.3s;
+        }
+
+        .timeline-item:hover .timeline-dot {
+            background: var(--secondary);
+            transform: scale(1.3);
+        }
+
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: -11px;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 0; /* Cleaner look */
+            border-top: 4px solid var(--primary);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .timeline-date {
+            display: inline-block;
+            background: #f1f5f9;
+            color: var(--primary);
+            padding: 6px 14px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .timeline-content h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content h4 {
+            color: var(--secondary); /* Accent color for company name */
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .timeline-content ul {
+            list-style: none;
+            text-align: left;
+        }
+
+        .timeline-content ul li {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: var(--text);
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .timeline-content ul li::before {
+            content: "\2022"; /* Bullet */
+            color: var(--secondary);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        /* Skills Cards */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 3rem;
+            border: 1px solid #f1f5f9;
+            transition: all 0.3s;
+            position: relative;
+            box-shadow: var(--shadow);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary);
+        }
+
+        .skill-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            color: var(--secondary);
+            font-size: 1.8rem;
+            border-radius: 50%; /* Circle icon */
+        }
+
+        .skill-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        /* Education Cards */
+        .education-card {
+            border-left-width: 6px !important;
+            transition: transform 0.3s;
+        }
+
+        .education-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Gallery - Content Fit */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            align-items: start; /* Prevents stretching */
+        }
+
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.4s ease;
+            height: auto; /* Allow natural height */
+            background: white;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            object-fit: contain; /* Ensure full image is visible */
+        }
+
+        /* Contact */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2.5rem;
+            max-width: 1100px;
+            margin: 3rem auto 0;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            border: 1px solid #f1f5f9;
+            transition: all 0.3s;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-card:hover {
+            border-top: 4px solid var(--secondary);
+            transform: translateY(-5px);
+        }
+
+        .contact-card i {
+            font-size: 2.5rem;
+            background: -webkit-linear-gradient(var(--secondary), var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: #94a3b8;
+            padding: 4rem 0;
+            text-align: center;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .nav-links { display: none; }
+            
+            .hero-content { flex-direction: column-reverse; text-align: center; }
+            .hero-text h1 { font-size: 3rem; }
+            
+            .stats { padding: 4rem 0; border-radius: 0; }
+            .stats-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+            .stat-item::after { display: none; }
+            
+            .timeline::after { left: 30px; }
+            .timeline-item { width: 100%; padding-left: 70px; padding-right: 0; text-align: left !important; }
+            .timeline-item:nth-child(even) { left: 0; }
+            .timeline-dot { left: 20px !important; right: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Abdul Malik<span style="color:var(--secondary)">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="badges">
+                    <span class="badge gold"><i class="fas fa-check-circle"></i> Golden Visa Eligible</span>
+                    <span class="badge">Immediate Relocation to UAE</span>
+                </div>
+                <h1>CRVS Strategy & <br>Operations Lead</h1>
+                <h2>Driving Digital Transformation in Public Sector & Vital Statistics</h2>
+                
+                <p style="margin-bottom: 2rem; color: var(--text-light); max-width: 600px;">
+                    <b>22-year NADRA Veteran.</b> Selected to lead United Nations-funded CRVS projects in Multan Region.
+                    From offline deployments to hospital-integrated terminals, I bridge the gap between policy and technology.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#experience" class="btn btn-secondary">My Journey</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <div class="container">
+        <section class="stats">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <h3>22+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>1,577+</h3>
+                    <p>Sites Managed</p>
+                </div>
+                <div class="stat-item">
+                    <h3>10M+</h3>
+                    <p>PKR Revenue (2022)</p>
+                </div>
+                <div class="stat-item">
+                    <h3>99.9%</h3>
+                    <p>Service Uptime</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">A track record of pioneering major civil registration milestones in South Punjab.</p>
+            </div>
+            
+            <div class="timeline">
+                
+                <!-- Role 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Dec 2025 – Present</span>
+                        <h3>CRVS Regional Focal Person (South Punjab)</h3>
+                        <h4>NADRA Regional Head Office</h4>
+                        <ul>
+                            <li>Leading United Nations-funded Civil Registration & Vital Statistics (CRVS) Project.</li>
+                            <li>Launched South Punjab’s first-ever hospital-integrated Birth & Death Notification & Registration Terminal (BNRT/DNRT) at Doctors Care Hospital.</li>
+                            <li>Rolled out CRMS Mobile Application across entire Multan Region (14 districts).</li>
+                            <li><b>Master Trainer:</b> Trained UC Secretaries & Assistant Directors Local Govt (Tehsil/District Level) on CRMS Mobile App. (Certified by Punjab Focal Person, Dec 2025).</li>
+                            <li>Official regional representative for UN CRVS compliance and interoperability.</li>
+                            <li><b>Liaised with local government authorities, from Union Council officials to the Divisional Director, to support effective technical and administrative implementation.</b></li>
+                            <li><b>Provided audit support to the CRMS Branch, RHO Multan.</b></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2010 – Present</span>
+                        <h3>District Superintendent CRMS</h3>
+                        <h4>NADRA Multan</h4>
+                        <ul>
+                            <li>Full P&L and operational responsibility for 196 Union Councils and 1,577 live registration sites.</li>
+                            <li>Delivered 10+ million PKR revenue in 2022 alone – highest performing district in Pakistan.</li>
+                            <li>Daily monitoring of vital events, revenue reconciliation, fraud prevention and field audits.</li>
+                            <li><b>Conducted Technical and Financial Audits of Union Councils.</b></li>
+                            <li>Resolved thousands of daily technical incidents ensuring 99.9% service uptime.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 – Dec 2025</span>
+                        <h3>Project Lead – Mobile Rollout</h3>
+                        <h4>NADRA Multan Region</h4>
+                        <ul>
+                            <li>End-to-end deployment of Pakistan’s first mobile vital events registration app across 14 districts.</li>
+                            <li>Managed stakeholder adoption and training for field staff.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jan 2022</span>
+                        <h3>Pioneer & Inaugurator – CRMS Web App</h3>
+                        <h4>NADRA Multan Region</h4>
+                        <ul>
+                            <li><b>Inaugurated by Director General NADRA Multan Region Major (R) Imran Ali Khan.</b></li>
+                            <li>Personally inaugurated the very first web-based CRMS site in the country.</li>
+                            <li>Multan Region became #1 revenue-generating region nationwide because of this launch.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2006 – 2015</span>
+                        <h3>System Administrator (CBRC)</h3>
+                        <h4>NADRA Multan</h4>
+                        <ul>
+                            <li>Promoted to lead Computerized Birth Registration Certificate (CBRC) Project rollout.</li>
+                            <li>Performed roles of System Administrator, Data Manager and official liaison with local government.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="education-grid" style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; margin-top: 2rem;">
+                <!-- MSc -->
+                <div class="education-card" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--shadow); flex: 1; min-width: 300px; text-align: center; border-left: 5px solid var(--secondary);">
+                    <i class="fas fa-graduation-cap" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                    <h3 style="color: var(--primary); font-size: 1.3rem; margin-bottom: 0.5rem;">MSc Economics</h3>
+                    <h4 style="color: var(--text-light); font-weight: 500; font-size: 1rem;">Bahauddin Zakariya University, Multan</h4>
+                    <p style="color: var(--secondary); font-weight: bold; margin-top: 0.5rem;">2001</p>
+                </div>
+                
+                <!-- Current Learning -->
+                <div class="education-card" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--shadow); flex: 1; min-width: 300px; text-align: center; border-left: 5px solid var(--accent);">
+                    <i class="fas fa-brain" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 1rem;"></i>
+                    <h3 style="color: var(--primary); font-size: 1.3rem; margin-bottom: 0.5rem;">Data Science & AI</h3>
+                    <h4 style="color: var(--text-light); font-weight: 500; font-size: 1rem;">Professional Development</h4>
+                    <span class="badge" style="background: #eff6ff; color: var(--accent); margin-top: 10px; display: inline-block;">In Progress</span>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 10px;">Enhancing skills in Machine Learning & Advanced Analytics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section" style="background-color: #f8fafc;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Competencies</h2>
+                <p class="section-subtitle">Expertise bridging technical deployment and audit compliance.</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-passport"></i></div>
+                    <h3>CRVS Leadership</h3>
+                    <p>UN Standards, Civil Registration, Vital Statistics, Hospital Integration (BNRT/DNRT).</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h3>Audit & Compliance</h3>
+                    <p>Technical & Financial Audits of UCs, Support for RHO Audit Purposes, Policy Enforcement.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Large-Scale Operations</h3>
+                    <p>Managing 1,577+ Registration Sites, Offline & Web Deployments across 14 Districts.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-users-cog"></i></div>
+                    <h3>Strategic Liaison</h3>
+                    <p>Coordination from Union Council Officials to Divisional Directors for implementation.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Tech Stack</h3>
+                    <p>Data Analysis (Python/Pandas/Kaggle), System Admin, Mobile App Rollouts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery-section" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Milestones</h2>
+                <p class="section-subtitle">Certifications & Events (2012 - 2025)</p>
+            </div>
+            <div class="gallery-grid">
+                <!-- 2025 Appreciation -->
+                <div class="gallery-item">
+                    <img src="./images/certificate_crvs_2025.jpg" alt="Certificate of Appreciation 2025 - CRVS Operations">
+                    <div class="gallery-info">
+                        <h4>Appreciation 2025</h4>
+                        <p>CRVS & Mobile Ops Training (Lahore)</p>
+                    </div>
+                </div>
+
+                <!-- 2025 Workshop Group -->
+                <div class="gallery-item">
+                    <img src="./images/workshop_group_photo_2025.jpg" alt="CRVS Workshop Group Photo 2025">
+                     <div class="gallery-info">
+                        <h4>CRMS Training 2025</h4>
+                        <p>Leading the Workshop in Multan</p>
+                    </div>
+                </div>
+
+                 <!-- 2025 Poster -->
+                <div class="gallery-item">
+                    <img src="./images/workshop_poster_2025.jpg" alt="Workshop Banner 2025">
+                     <div class="gallery-info">
+                        <h4>Workshop Organizer</h4>
+                        <p>One Day Training on Mobile App</p>
+                    </div>
+                </div>
+
+                <!-- 2022 Web App -->
+                <div class="gallery-item">
+                    <img src="./images/certificate_crms_web_2022.jpg" alt="Certificate 2022 - Web Based Application">
+                     <div class="gallery-info">
+                        <h4>Web CRMS 2022</h4>
+                        <p>Web-Based App Training</p>
+                    </div>
+                </div>
+
+                <!-- 2012 Participation -->
+                <div class="gallery-item">
+                    <img src="./images/certificate_crms_2012.jpg" alt="Certificate 2012 - CRMS">
+                     <div class="gallery-info">
+                        <h4>Foundational Era</h4>
+                        <p>CRMS Participation 2012</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" style="background-color: var(--light);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Technical initiatives in Data Science and Open Source.</p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Project 1 -->
+                <a href="https://github.com/abdulmaliklodhra" target="_blank" class="skill-card" style="text-decoration: none; border-left: 5px solid var(--primary); display: block;">
+                    <div class="skill-icon" style="background: #24292e; color: white;"><i class="fab fa-github"></i></div>
+                    <h3>GitHub Repository</h3>
+                    <p style="color: var(--text);">Comprehensive collection of coding projects, automation scripts, and version control examples.</p>
+                </a>
+                
+                <!-- Project 2 -->
+                <a href="https://www.kaggle.com/abdulmaliklodhra" target="_blank" class="skill-card" style="text-decoration: none; border-left: 5px solid #20BEFF; display: block;">
+                    <div class="skill-icon" style="background: #ffffff; color: #20BEFF; border: 1px solid #e2e8f0;"><i class="fab fa-kaggle"></i></div>
+                    <h3>World Bank Electricity EDA</h3>
+                    <p style="color: var(--text);">In-depth Exploratory Data Analysis of global primary school electricity access using Python.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Open to new opportunities in UAE GovTech and Digital Identity sectors.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <a href="tel:+9203023575410" class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>Phone / WhatsApp</h4>
+                    <span>+92-03023575410</span>
+                </a>
+                
+                <a href="mailto:abdulmaliklodhra77@gmail.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <span>abdulmaliklodhra77@gmail.com</span>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/abdul-malik-42b5a8254/" target="_blank" class="contact-card">
+                    <i class="fab fa-linkedin-in"></i>
+                    <h4>LinkedIn</h4>
+                    <span>View Profile</span>
+                </a>
+                
+                <a href="https://github.com/abdulmaliklodhra" target="_blank" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <h4>GitHub</h4>
+                    <span>abdulmaliklodhra</span>
+                </a>
+                
+                <a href="https://www.kaggle.com/abdulmaliklodhra" target="_blank" class="contact-card">
+                    <i class="fab fa-kaggle"></i>
+                    <h4>Kaggle</h4>
+                    <span>abdulmaliklodhra</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Abdul Malik. Designed for International Opportunities.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
