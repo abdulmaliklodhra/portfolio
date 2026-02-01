@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://abdulmalikportfolio.com/sitemap.xml
